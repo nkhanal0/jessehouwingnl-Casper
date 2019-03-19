@@ -18,3 +18,7 @@ projectFilesBackup
 .DS_Store
 dist/
 .vs/
+
+config.json
+changelog.md
+changelog.md.bk
