@@ -59,7 +59,11 @@ It's a good idea to keep this template as minimal as possible in terms of both f
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
     <script>
-    ga('set', 'dimension1', true);
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            'custom_map': {'dimension1': 'error'}
+        });
+
+        gtag('event', 'error_dimension', {'error': 404});
     </script>
 </body>
 </html>
