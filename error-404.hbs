@@ -8,7 +8,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{meta_title}}</title>
+    <title>{{meta_title}} - {{code}}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
@@ -63,7 +63,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
             'custom_map': {'dimension1': 'error'}
         });
 
-        gtag('event', 'error_dimension', {'error': 404});
+        gtag('event', 'error_dimension', {'error': '{{code}}'});
     </script>
 </body>
 </html>
