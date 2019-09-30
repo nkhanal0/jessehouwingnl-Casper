@@ -12,6 +12,9 @@ It's a good idea to keep this template as minimal as possible in terms of both f
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
 </head>
 <body class="error-template">
     <div class="site-wrapper">
@@ -52,5 +55,8 @@ It's a good idea to keep this template as minimal as possible in terms of both f
         {{/get}}
 
     </div>
+    
+    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+    {{ghost_foot}}
 </body>
 </html>
