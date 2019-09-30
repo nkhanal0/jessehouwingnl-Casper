@@ -13,6 +13,9 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{ghost_head}}
 </head>
 <body class="error-template">
     <div class="site-wrapper">
@@ -59,5 +62,8 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
             </div>
         </main>
     </div>
+    
+    {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
+    {{ghost_foot}}
 </body>
 </html>
