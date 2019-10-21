@@ -8,11 +8,11 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{meta_title}} - {{code}}</title>
+    <title>{{meta_title}} -  {{statusCode}}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
-    
+
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 </head>
@@ -55,11 +55,11 @@ It's a good idea to keep this template as minimal as possible in terms of both f
         {{/get}}
 
     </div>
-    
+
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
     <script>
-        gtag('event', 'statusCode_dimension', {'statusCode': {{statusCode}}});
+        gtag('event', 'http_error', { 'statusCode': {{statusCode}} });
     </script>
 </body>
 </html>
