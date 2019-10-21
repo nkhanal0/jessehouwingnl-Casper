@@ -59,7 +59,7 @@ It's a good idea to keep this template as minimal as possible in terms of both f
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
     <script>
-        gtag('event', 'page_error', {'error': '{{statusCode}}'});
+        gtag('event', 'statusCode_dimension', {'statusCode': {{statusCode}}});
     </script>
 </body>
 </html>
