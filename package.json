@@ -5,7 +5,7 @@
     "version": "3.0.0",
     "engines": {
         "ghost": ">=3.0.0",
-        "ghost-api": "v2"
+        "ghost-api": "v3"
     },
     "license": "MIT",
     "screenshots": {
